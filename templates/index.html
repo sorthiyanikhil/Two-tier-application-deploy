@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flask App</title>
-    <style>
+    <style> 
         body, h1, p, form, input {
             margin: 0;
             padding: 0;
@@ -13,12 +13,12 @@
         }
 
         body {
-            background-color: #f4f4f4;
+            background-color: #88c7e3;
         }
 
         .container {
-            max-width: 800px;
-            margin: 50px auto;
+            max-width: 835px;
+            margin: 180px auto;
             padding: 20px;
             background-color: #fff;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -35,6 +35,7 @@
             margin-bottom: 20px;
             border-bottom: 2px solid #f0f0f0;
             padding-bottom: 10px;
+            text-align: center;
         }
 
         p {
@@ -93,14 +94,16 @@
 
 <body>
     <div class="container">
-        <h1>Hello Dosto, 
-            Let's make a 2 Tier Application with Flask and MYSQL!</h1>
+        <h1> 
+            <img src="./logo.jpeg" alt="" height="40px" width="70px"/>
+            TextCanvas : Saving and Displaying Your Thoughts
+        </h1>
         {% for message in messages %}
             <p>{{ message[0] }}</p>
         {% endfor %}
 
         <form action="/submit" method="post">
-            <input type="text" name="new_message" placeholder="Enter a new message">
+            <input type="text" name="new_message" placeholder="Present your thoughts">
             <input type="submit" value="Submit">
         </form>
     </div>
