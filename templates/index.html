@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flask App</title>
+    <title>Communify</title></title>
     <style> 
         body, h1, p, form, input {
             margin: 0;
@@ -95,16 +95,16 @@
 <body>
     <div class="container">
         <h1> 
-            <img src="./logo.jpeg" alt="" height="40px" width="70px"/>
-            TextCanvas : Saving and Displaying Your Thoughts
+            
+            Communify: Chat with Your Friends
         </h1>
         {% for message in messages %}
             <p>{{ message[0] }}</p>
         {% endfor %}
 
         <form action="/submit" method="post">
-            <input type="text" name="new_message" placeholder="Present your thoughts">
-            <input type="submit" value="Submit">
+            <input type="text" name="new_message" placeholder="Reply with your friends">
+            <input type="submit" value="Send Message">
         </form>
     </div>
 </body>
